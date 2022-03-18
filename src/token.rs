@@ -5,8 +5,8 @@ use std::time::{Duration, SystemTime, SystemTimeError};
 
 use async_mutex::Mutex;
 use reqwest::{Client, StatusCode};
-use serde::export::Formatter;
 use serde::{Deserialize, Serialize};
+use std::fmt::Formatter;
 
 /// Auth0 OAuth token.
 #[derive(Deserialize)]

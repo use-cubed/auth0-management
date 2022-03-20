@@ -1,28 +1,28 @@
 [package]
+authors = ["Marvin Countryman <me@maar.vin>"]
+description = "An unofficial client for Auth0 Management API."
+edition = "2018"
 name = "auth0-management"
 version = "0.0.4"
-authors = ["Marvin Countryman <me@maar.vin>"]
-edition = "2018"
-description = "An unofficial client for Auth0 Management API."
 
-readme = "./README.md"
-license = "MIT"
-keywords = ["auth0", "reqwest", "management", "api"]
 categories = [
   "api-bindings",
   "asynchronous",
-  "authentication"
+  "authentication",
 ]
-repository = "https://github.com/mcountryman/auth0-management"
 documentation = "https://docs.rs/auth0-management"
+keywords = ["auth0", "reqwest", "management", "api"]
+license = "MIT"
+readme = "./README.md"
+repository = "https://github.com/mcountryman/auth0-management"
 
 [dependencies]
-serde = { version = "1", features = ["derive"] }
-serde_json = "1"
-reqwest = { version = "0.10", features = ["json"] }
-async-trait = "0.1"
-chrono = { version = "0.4", features = ["serde"] }
 async-mutex = "1.4"
+async-trait = "0.1"
+chrono = {version = "0.4", features = ["serde"]}
+reqwest = {version = "0.11.10", features = ["json"]}
+serde = {version = "1", features = ["derive"]}
+serde_json = "1"
 
 [dev-dependencies]
-tokio = { version = "0.2.22", features = ["macros"] }
+tokio = {version = "1.17.0", features = ["macros"]}

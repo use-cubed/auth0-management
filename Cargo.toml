@@ -3,7 +3,7 @@ authors = ["Marvin Countryman <me@maar.vin>"]
 description = "An unofficial client for Auth0 Management API."
 edition = "2018"
 name = "auth0-management"
-version = "0.0.4"
+version = "0.0.5"
 
 categories = [
   "api-bindings",
